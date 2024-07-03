@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('src/assets/images/bg-intro-desktop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+}
+.free{
+  box-shadow: 0px 6px 2px hsla(0, 43%, 55%, 0.904);
+}
+.form{
+  box-shadow: 0px 8px 2px hsla(0, 43%, 55%, 0.904);
+
+
+}
+
+@media (max-width: 768px) {
+  body{
+    padding:40px 20px 40px 20px;
+    background-image: url('src/assets/images/bg-intro-mobile.png');
+  }
+  
+}
